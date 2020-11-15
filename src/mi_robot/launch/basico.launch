@@ -1,0 +1,17 @@
+<launch>
+
+    <!-- Metemos la "robot_description" en el parameter server -->
+        <param name="robot_description" command="$(find xacro)/xacro.py $(find mi_robot)/robot_description/mi_robot.urdf.xacro" />
+    
+    <!-- Iniciamos robot state publisher -->
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <!-- Iniciamos joint state publisher, iniciamos el GUI-->
+        <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+            <param name="use_gui" value="True"/>
+        </node>
+
+    <!-- metemos el robot en Rviz, iniciamos Rviz   -->
+     <node name="rviz" pkg="rviz" type="rviz"/>
+    
+
+</launch>

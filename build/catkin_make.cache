@@ -1,0 +1,2 @@
+mi_robot
+-DCATKIN_DEVEL_PREFIX=/home/hualde/ros_tutorial_ws/devel -DCMAKE_INSTALL_PREFIX=/home/hualde/ros_tutorial_ws/install -G Unix Makefiles
