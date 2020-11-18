@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named mi_libreria
+
+# Build rule for target.
+mi_libreria: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mi_libreria
+.PHONY : mi_libreria
+
+# fast build rule for target.
+mi_libreria/fast:
+	$(MAKE) -f entrada_cmake/CMakeFiles/mi_libreria.dir/build.make entrada_cmake/CMakeFiles/mi_libreria.dir/build
+.PHONY : mi_libreria/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -294,7 +307,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/roscpp_generate_messages_py.dir/build.make mi_robot/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/roscpp_generate_messages_py.dir/build.make entrada_cmake/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -307,7 +320,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mi_robot/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/roscpp_generate_messages_eus.dir/build.make entrada_cmake/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -320,7 +333,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mi_robot/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make entrada_cmake/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -333,7 +346,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -346,7 +359,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mi_robot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make entrada_cmake/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -359,7 +372,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mi_robot/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make entrada_cmake/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -372,7 +385,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -385,8 +398,21 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named mi_ejecutable
+
+# Build rule for target.
+mi_ejecutable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mi_ejecutable
+.PHONY : mi_ejecutable
+
+# fast build rule for target.
+mi_ejecutable/fast:
+	$(MAKE) -f entrada_cmake/CMakeFiles/mi_ejecutable.dir/build.make entrada_cmake/CMakeFiles/mi_ejecutable.dir/build
+.PHONY : mi_ejecutable/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -398,7 +424,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mi_robot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make entrada_cmake/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -411,7 +437,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -424,7 +450,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mi_robot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make entrada_cmake/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -437,7 +463,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mi_robot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make entrada_cmake/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -450,7 +476,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mi_robot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make entrada_cmake/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -463,7 +489,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mi_robot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make entrada_cmake/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -476,7 +502,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f mi_robot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mi_robot/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f entrada_cmake/CMakeFiles/std_msgs_generate_messages_py.dir/build.make entrada_cmake/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Help Target
@@ -501,6 +527,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... mi_libreria"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -509,6 +536,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... mi_ejecutable"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"

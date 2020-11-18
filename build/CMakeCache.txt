@@ -291,6 +291,12 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
+entrada_cmake_BINARY_DIR:STATIC=/home/hualde/ros_tutorial_ws/build/entrada_cmake
+
+//Value Computed by CMake
+entrada_cmake_SOURCE_DIR:STATIC=/home/hualde/ros_tutorial_ws/src/entrada_cmake
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/hualde/ros_tutorial_ws/build/gtest/googlemock
 
 //Dependencies for the target
@@ -344,6 +350,9 @@ lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
+
+//Dependencies for target
+mi_libreria_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 mi_robot_BINARY_DIR:STATIC=/home/hualde/ros_tutorial_ws/build/mi_robot
@@ -485,7 +494,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
