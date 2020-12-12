@@ -8,6 +8,8 @@ int main(int argc, char ** argv) {
     ROS_WARN("PROGRAMA");
 
     Mi_libreria mi_libreria(node);
+    
+    mi_libreria.numero;
 
 
     return 0;

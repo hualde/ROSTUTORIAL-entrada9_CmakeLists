@@ -1,0 +1,8 @@
+prefix=/home/hualde/ros_tutorial_ws/install
+
+Name: entrada_acciones
+Description: Description of entrada_acciones
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

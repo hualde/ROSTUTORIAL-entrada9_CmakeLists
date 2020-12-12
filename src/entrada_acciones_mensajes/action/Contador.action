@@ -1,0 +1,8 @@
+#goal
+int64 objetivo
+---
+#result
+int64 contador
+---
+#feedback
+float64 proporcion
